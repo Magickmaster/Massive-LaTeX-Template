@@ -1,0 +1,26 @@
+% =========================================
+%    filename : pdf.tex
+% description : Metadata and graphix setup for PDF
+%  created by : Jonas Sigel
+%       alias : Magickmaster
+%     created : October, 2018
+%      company: personal use
+% =========================================
+
+% -------------- PDF metadata and hyperlinking setup ----------------------------
+\usepackage{ifpdf} % Allows for checking whether file will be output as PDF
+
+\ifpdf
+     \usepackage{graphicx}% [pdftex]
+     \usepackage[pdftex,colorlinks=true,linkcolor=black,citecolor=black]{hyperref}
+\else
+     \usepackage[dvips]{graphicx}
+     \usepackage[dvips,colorlinks=true,linkcolor=black,citecolor=black]{hyperref}
+\fi
+
+\hypersetup{pdftitle    = {\TITLE},
+            pdfsubject  = {\SUBJECT},
+            pdfkeywords = {\KEYWORDS},
+            pdfauthor   = { \textcopyright Layout by Jonas Sigel, used by: \AUTHOR },}
+
+% -------------------------------------------------------------------------------

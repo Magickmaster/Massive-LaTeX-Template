@@ -1,0 +1,103 @@
+% =========================================
+%    filename : used-packages.tex
+% description : Repository of all used packages with explanations
+%  created by : Jonas Sigel
+%       alias : Magickmaster
+%     created : October, 2018
+%      company: personal use
+% =========================================
+
+% https://ctan.org/ -- If you don't know about a package, look it up here
+
+
+% ---- All used packages (unless config-specific) --------------------------------
+
+% --- Meta ----------------
+
+\usepackage{syntonly}					% Run LaTeX without render for fast syntax checking
+%%\usepackage{lipsum}						% Lorem Ipsum blindtext
+
+% --- Maths ---------------
+\usepackage{amsmath}					% AMS-TeX mathematical features
+\usepackage{amssymb, amsfonts}			% Capability for special math symbols
+\usepackage{amsthm}						% Typeset theorems
+\usepackage{units}						% Typeset physical units, such as meters, speed
+\usepackage{array}						% advanced array and tabular environment
+\usepackage{mathtools} 					% Additional AMS Symbols such as := etc
+\usepackage{booktabs}
+
+% --- KOMA script ---------
+\usepackage[headsepline]{scrlayer-scrpage}			% Base package of KOMA
+\usepackage{titleps}					% page styles with a simple one-stage mechanism
+
+% --- Text beautification -
+\usepackage{soul}						% Strike-through text, underline etc.
+\usepackage{framed}						% Displays borderframes around environment
+\usepackage{color}						% Changes text color
+\usepackage[table]{xcolor}				% Advanced functions for color package
+\usepackage[\SPACING]{setspace}			% Adds line spacing
+%\usepackage[]{fullpage}				% Reduced margin around text, filling page more
+\usepackage{enumitem}					% Advanced control over enum, itemize, description
+
+% --- Images ---------------
+\usepackage{animate}					% Insert animations, such as gifs
+\usepackage[calc]{picture}				% Add diagrams, circles, vectors etc.
+\usepackage{pgf}						% core of tikz: Typeset your own graphics
+\usepackage{tikz}						% Macros for pgf: Commonly used alone
+\usetikzlibrary{trees}					% TiKz Package for drawing trees
+\usepackage{caption, subcaption}		% (Sub-)Captions for images / floats
+
+% --- Pseudo /-Code -------
+\usepackage[linesnumbered,lined,boxed]{algorithm2e}				
+										% "All You Need" pseudo /-code environment
+\usepackage{listings}
+	\lstset{
+		basicstyle=\ttfamily,
+		keywordstyle=\bfseries\ttfamily\color{orange},
+		stringstyle=\color{green}\ttfamily,
+		commentstyle=\color{middlegray}\ttfamily,
+		emph={square}, 
+		emphstyle=\color{blue}\texttt,
+		emph={[2]root,base},
+		emphstyle={[2]\color{yac}\texttt},
+		showstringspaces=false,
+		flexiblecolumns=false,
+		tabsize=2,
+		numbers=left,
+		numberstyle=\ttfamily,
+		numberblanklines=false,
+		stepnumber=1,
+		numbersep=10pt,
+		xleftmargin=15pt
+	}
+\definecolor{middlegray}{rgb}{0.5,0.5,0.5}
+\definecolor{lightgray}{rgb}{0.8,0.8,0.8}
+\definecolor{orange}{rgb}{0.8,0.3,0.3}
+\definecolor{yac}{rgb}{0.6,0.6,0.1}
+
+% --- Floats --------------
+
+\usepackage{float}						% Allow for floating objects
+\usepackage{wrapfig}					% Allows for text to flow around figures or tables
+%DEPRECIATED %\usepackage{dblfloatfix}	% Fixes side-by-side floats, partially depreciated?
+
+% --- Large-Scale works ---
+\usepackage{tocloft}					% Control over Table of Contents
+
+% Activate these TOGETHER for bibliography, citations
+%\usepackage[style=verbose-ibid,autocite=footnote,autopunct=true,natbib=true]{biblatex}
+%\usepackage{csquotes}					% More specialized quoting environment
+
+
+% -------------------------
+% -- TBD --- TBD --- TBD --
+
+
+%\usepackage{listings}					%
+%\usepackage[rflt]{floatflt}			%
+%\usepackage{microtype}					% Breaks LaTeX, fix!
+%\usepackage{titling}					% Fancy titling
+%\usepackage{colortbl}					% Colored cells for tables
+%\usepackage{rotating}
+
+

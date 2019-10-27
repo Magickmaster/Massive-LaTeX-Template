@@ -1,0 +1,32 @@
+% ------------------------------------------------------------------------------
+% allgemeine Angaben zum Seitenlayout
+\setlength{\headheight}{20pt}
+\linespread{1.0}%
+\setlength{\parindent}{0em}			% Kein franz. Paragraph
+\setlength{\parskip}{0.5ex}			%  Abstand zwischen getrennten Paragraphen
+% -----------------------------------------------------------------------------
+
+\author{\AUTHOR}
+\title{\vspace{-3em}\TITLE}
+
+% -------Seitenstyling---------------------------------------------------------
+
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+%\clearscrheadings
+
+\ihead{}						% inner head
+\chead{\SUBJECT}				% center head
+\ohead{}						% outer head
+
+\ifoot{\SURNAME}						% inner foot
+\cfoot{}						% center foot
+\ofoot{\pagemark}				% outer foot
+
+% ------------------------------------------------------------------------------
+
+
+\newpagestyle{titleLower}{
+	\sethead[][][]{}{}{}
+	\setfoot[][][]{}{}{\thepage}
+}

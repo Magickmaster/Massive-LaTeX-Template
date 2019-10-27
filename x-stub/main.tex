@@ -1,0 +1,41 @@
+% =========================================
+%    filename : 0-main.tex
+% description : main file for LaTeX documents
+%  created by : Jonas Sigel
+%       alias : Magickmaster
+%     created : October, 2018
+%      company: personal use
+% =========================================
+
+\documentclass[12pt,a4paper, headsepline]{book}
+\usepackage{nag}
+\def\LANGUAGE{ngerman}
+\def\SPACING{} %{onehalfspacing}
+
+% ----------- Metadata --------------------
+
+\def\TITLE{Stub Title}%
+\def\SUBJECT{Stub Files -- LaTeX documents -- personal masterfiles}%
+\def\KEYWORDS{LaTeX, Jonas Sigel, Masterfile}%
+\def\AUTHOR{Jonas Sigel}
+\def\LAYOUT{exercise-layout}
+% =========================================
+
+\input{../x-preamble-files/config-file}%
+\input{../x-layout-files/exercise-layout}
+%\syntaxonly
+
+% -----------------------------------------
+
+\begin{document}
+\maketitle
+\thispagestyle{titleLower}	
+\section{Lorem Ipsum Dolor Sit Amet}
+
+\lipsum{50}
+
+\end{document}
+
+% --- end of the master-document ----------
+
+
